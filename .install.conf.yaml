@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.vim:
+    ~/.vimrc:
+
+- shell:
+    -
+        command: vim +'PlugInstall --sync' +qa
+        description: Install vim plugins
+    -
+        command: git submodule sync --recursive
+        description: sync submodules
+    -
+        command: git submodule update --init --recursive
+        description: update submodules
