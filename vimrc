@@ -18,15 +18,15 @@ augroup END
 " but it can be set to force 256 colors
 " set t_Co=256
 if has('gui_running')
-    colorscheme solarized
-    let g:lightline = {'colorscheme': 'solarized'}
+    colorscheme desert
+    let g:lightline = {'colorscheme': 'desert'}
 elseif &t_Co < 256
     colorscheme default
     set nocursorline " looks bad in this mode
 else
     set background=dark
     let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
-    colorscheme solarized
+    colorscheme desert
     " customized colors
     highlight SignColumn ctermbg=234
     highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
