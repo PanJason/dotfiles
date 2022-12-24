@@ -12,7 +12,10 @@
 
 - shell:
     -
-        command: vim +'PlugInstall --sync' +qa
+        command: vim +PlugUpdate +qall &> /dev/null
+        stdin: true
+        stdout: true
+        stderr: true
         description: Install vim plugins
     -
         command: git submodule sync --recursive
