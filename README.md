@@ -9,7 +9,7 @@ Here is the link to the dotbot
 
 # Installation
 1. First install zsh and required fonts: `./install-zsh.sh` \
-**Known issues:** If the machine is using `LDAP` authentication by PAM or something, which means that you are login to the machine as a domain user, you might not be able to change the default shell by `chsh` in the `install-zsh.sh`. Here is a workaround: \
+**Known issues:** If the machine is using `LDAP` authentication by PAM or something, which means that you login to the machine as a domain user, you might not be able to change the default shell by `chsh` in the `install-zsh.sh`. Here is a workaround: \
 Add this code snippet to `~/.profile`:
 ```zsh
 # Run zsh
