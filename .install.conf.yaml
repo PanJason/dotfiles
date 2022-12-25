@@ -10,6 +10,15 @@
     ~/.vimrc:
     ~/.tmux.conf:
     ~/.gitconfig:
+    ~/.zshrc: 
+
+- git:
+    '~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting':
+        url: 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
+        description: 'zsh plugin: zsh-syntax-highlighting'
+    '~/.oh-my-zsh/custom/plugins/zsh-autosuggestions':
+        url: 'https://github.com/zsh-users/zsh-autosuggestions'
+        description: 'zsh plugin: zsh-autosuggestions'
 
 - shell:
     -
