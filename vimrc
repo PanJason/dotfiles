@@ -152,7 +152,7 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " Auto generate ctags files
 " https://ctags.io/
-"Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags'
 " AsyncRun
 Plug 'skywind3000/asyncrun.vim'
 " C++ Syntax highlighting
@@ -201,16 +201,16 @@ let g:ale_c_build_dir_names = ['build', 'bin', 'cmake-build-debug']
 nnoremap <Leader>mru :LeaderfMru<CR>
 
 " gutentags
-"let g:gutentags_project_root = g:my_project_root
-"let g:gutentags_ctags_tagfile = '.tags'
-"let s:vim_tags = expand('~/.cache/tags')
-"let g:gutentags_cache_dir = s:vim_tags
-"let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-"let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
-"let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-"if !isdirectory(s:vim_tags)
-"   silent! call mkdir(s:vim_tags, 'p')
-"endif
+let g:gutentags_project_root = g:my_project_root
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
 
 " asyncrun
 let g:asyncrun_open = 10  " window height
